@@ -14,7 +14,7 @@ Material:
   m_LightmapFlags: 5
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
+  m_CustomRenderQueue: 3000
   stringTagMap: {}
   disabledShaderPasses: []
   m_SavedProperties:
@@ -32,6 +32,10 @@ Material:
         m_Texture: {fileID: 2800000, guid: f204e0351ca85ca458290d56921afa5b, type: 3}
         m_Scale: {x: 10, y: 10}
         m_Offset: {x: 0, y: 0}
+    - _CausticsTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _Cube:
         m_Texture: {fileID: 8900000, guid: 520e03406df1aa445b74508cd4fcbfc2, type: 3}
         m_Scale: {x: 1, y: 1}
@@ -48,7 +52,15 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _DisplacementTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _FlowMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
@@ -83,14 +95,23 @@ Material:
     m_Floats:
     - _Amplitude: 7.73
     - _BumpLargeStrength: 0.712
+    - _BumpMode: 0
     - _BumpScale: 1
     - _BumpStrength: 0.824
     - _CapsIntensity: 1.95
+    - _CapsSize: 1
     - _CapsSpeed: 0.6
+    - _Caustics: 0
+    - _CausticsEnd: 10
+    - _CausticsIntensity: 4
+    - _CausticsSpeed: 1
+    - _CausticsStart: 0
     - _CubeDist: 0.058
     - _Cutoff: 0.5
     - _DISPLACEMENT: 1
     - _Depth: 1.54
+    - _DepthEnd: 10
+    - _DepthStart: 0
     - _DetailNormalMapScale: 1
     - _DisplacementMode: 2
     - _Distortion: 42.2
@@ -102,6 +123,8 @@ Material:
     - _FOAM: 1
     - _FadeMax: 136.2
     - _FadeMin: 0.05
+    - _FlowIntensity: 1
+    - _FlowSpeed: 1
     - _FoamSize: 4.2
     - _Frequency: 1.99
     - _Glossiness: 0.5
@@ -113,6 +136,7 @@ Material:
     - _ReflectionTint: 0.455
     - _ReflectionType: 2
     - _RimPower: 5.2
+    - _Scatter: 0
     - _Shininess: 1
     - _Smoothing: 0.552
     - _Smoothness: 0.936
@@ -127,15 +151,20 @@ Material:
     - _WhiteCaps: 1
     - _WorldSpace: 0
     - _ZWrite: 1
+    - _specFresnel: 2
+    - _specIntensity: 1
     m_Colors:
     - _Color: {r: 0.48496974, g: 0.9558824, b: 0.8584521, a: 1}
     - _Color0: {r: 1, g: 1, b: 1, a: 1}
     - _Color1: {r: 1, g: 0, b: 0, a: 1}
     - _CubeColor: {r: 1, g: 1, b: 1, a: 1}
     - _DepthColor: {r: 0.10926686, g: 0.23912041, b: 0.31617647, a: 1}
+    - _DisplacementSpeed: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _FoamColor: {r: 1, g: 1, b: 1, a: 1}
     - _InvRanges: {r: 0, g: 0.17, b: 0.42, a: 0}
+    - _ScatterColor: {r: 0, g: 1, b: 1, a: 1}
+    - _ScatterParams: {r: 1, g: 1, b: 1, a: 1}
     - _SpecColor: {r: 1, g: 1, b: 1, a: 1}
     - _Specular: {r: 1, g: 0.9044118, b: 0.9044118, a: 1}
     - _Speeds: {r: 0.5, g: 0.5, b: -0.2, a: -0.2}
