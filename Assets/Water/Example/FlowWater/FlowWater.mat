@@ -10,7 +10,7 @@ Material:
   m_Name: FlowWater
   m_Shader: {fileID: 4800000, guid: ff3b6118238761c4f9e22f5b59c9f61d, type: 3}
   m_ShaderKeywords: _BUMPMODE_FLOWMAP _DEPTHFOG_ON _DISPLACEMENTMODE_WAVE _DISPLACEMENT_ON
-    _DISTORTIONQUALITY_HIGH _FOAM_ON _REFLECTIONTYPE_NONE
+    _DISTORTIONQUALITY_HIGH _FOAM_ON _REFLECTIONTYPE_NONE _WORLDSPACE_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -93,7 +93,7 @@ Material:
     - _BumpLargeStrength: 1
     - _BumpMode: 2
     - _BumpScale: 1
-    - _BumpStrength: 0.049
+    - _BumpStrength: 0.036
     - _CapsIntensity: 1
     - _CapsSize: 1
     - _CapsSpeed: 1
@@ -117,7 +117,7 @@ Material:
     - _FlowIntensity: 1
     - _FlowSpeed: 1
     - _FoamSize: 4
-    - _Frequency: 5.02
+    - _Frequency: 6
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
@@ -133,14 +133,14 @@ Material:
     - _Smoothness: 1.2
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
-    - _Speed: 1.35
+    - _Speed: 1.86
     - _SrcBlend: 1
     - _Steepness: 2
     - _UVSec: 0
     - _WhiteCaps: 0
-    - _WorldSpace: 0
+    - _WorldSpace: 1
     - _ZWrite: 1
-    - _specFresnel: 2.47
+    - _specFresnel: 1.91
     - _specIntensity: 2
     m_Colors:
     - _Color: {r: 0.3764706, g: 0.9647059, b: 0.54901963, a: 1}
